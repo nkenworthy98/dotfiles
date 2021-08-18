@@ -5,5 +5,5 @@
 	path = .doom.d
 	url = ../.doom.d/
 [submodule "dwm"]
-	path = dwm
-	url = ../.sucklessPrograms/dwm
+	path = .sucklessPrograms/dwm
+	url = ../dwm
