@@ -1,0 +1,46 @@
+! Another Theme
+*background:  #ffffff
+*foreground:  #000000
+*color0:  #060304
+*color1:  #f80010
+*color2:  #1eba00
+*color3:  #bfa100
+*color4:  #009ace
+*color5:  #f130aa
+*color6:  #25ead4
+*color7:  #ffffff
+*color8:  #8d8a80
+*color9:  #ff0208
+*color10:  #31cb28
+*color11:  #cead00
+*color12:  #00b6ef
+*color13:  #ff45c4
+*color14:  #00efd3
+*color15:  #ffffff
+
+Sxiv.background: #000000
+Sxiv.foreground: #ffffff
+!Sxiv.foreground: #1793d1
+Sxiv.font: Terminus-10
+
+! *background:  #a6afb8
+! *foreground:  #000000
+! *color0:  #222e38
+! *color1:  #ef5253
+! *color2:  #7cc844
+! *color3:  #e66b2b
+! *color4:  #33b5e1
+! *color5:  #a363d5
+! *color6:  #52cbb0
+! *color7:  #e8e9ed
+! *color8:  #586875
+! *color9:  #ef5253
+! *color10:  #7cc844
+! *color11:  #e4b51c
+! *color12:  #33b5e1
+! *color13:  #a363d5
+! *color14:  #52cbb0
+! *color15:  #f5f7fa
+
+xterm*foreground:  #ffffff
+xterm*background:  #000000

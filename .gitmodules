@@ -1,0 +1,9 @@
+[submodule "bin"]
+	path = bin
+	url = ../bin
+[submodule ".doom.d"]
+	path = .doom.d
+	url = ../.doom.d/
+[submodule "dwm"]
+	path = dwm
+	url = ../.sucklessPrograms/dwm
