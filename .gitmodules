@@ -7,15 +7,9 @@
 [submodule ".doom.d"]
 	path = .doom.d
 	url = ../doom-emacs-config
-[submodule ".sucklessProgram/st"]
-	path = .sucklessPrograms/st
-	url = ../st
-[submodule ".sucklessProgram/dmenu"]
-	path = .sucklessPrograms/dmenu
-	url = ../dmenu
 [submodule ".sucklessPrograms/st"]
 	path = .sucklessPrograms/st
-	url = https://github.com/nkenworthy98/st
+	url = ../st
 [submodule ".sucklessPrograms/dmenu"]
 	path = .sucklessPrograms/dmenu
-	url = https://github.com/nkenworthy98/dmenu
+	url = ../dmenu
