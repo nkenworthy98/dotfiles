@@ -11,7 +11,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME="random"
-PROMPT='%B%F{magenta}[%F{#2d6580}%n%f%F{#2d6580}@%F{#2d6580}%m%f %F{cyan}%B%c%F{magenta}]%b%f%# '
+export MAIN_CUSTOM_COLOR='#2d6580'
+PROMPT='%B%F{magenta}[%F{$MAIN_CUSTOM_COLOR}%n%f%F{$MAIN_CUSTOM_COLOR}@%F{$MAIN_CUSTOM_COLOR}%m%f %F{cyan}%B%c%F{magenta}]%b%f%# '
 
 # This is needed in order for TRAMP to work
 # This needs to be in the remote machine's shell rc file
