@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH="$PATH:$HOME/bin:$HOME/bin/perl_scripts:$HOME/bin/tmr-scripts:/usr/local/bin:$HOME/.local/bin"
+export PATH="$PATH:$HOME/bin:$HOME/bin/perl_scripts:$HOME/bin/ocr-scripts:$HOME/bin/tmr-scripts:/usr/local/bin:$HOME/.local/bin"
 
 # Path to your oh-my-zsh installation.
 # export ZSH="/home/nick/.oh-my-zsh"
