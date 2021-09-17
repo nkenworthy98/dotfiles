@@ -2,7 +2,6 @@
 export PATH="$PATH:$HOME/bin:$HOME/bin/perl_scripts:$HOME/bin/ocr-scripts:$HOME/bin/tmr-scripts:/usr/local/bin:$HOME/.local/bin"
 
 # Path to your oh-my-zsh installation.
-# export ZSH="/home/nick/.oh-my-zsh"
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -112,10 +111,7 @@ source $ZSH/oh-my-zsh.sh
 alias em='emacs -nw'
 alias yv='pipe-viewer -360'
 alias pm='pulsemixer'
-alias backg='xrandr --auto; xwallpaper --zoom $HOME/.config/wallpaper.jpg'
 alias nb='newsboat'
-alias wa='torsocks w3m archlinux.org'
-alias wd='torsocks w3m duckduckgo.com'
 alias pacman-remove-dependencies='sudo pacman -Rs $(pacman -Qqtd)'
 alias convert-md-to-org='find . -name "*.md" | while read i; do pandoc -f markdown -t org "$i" -o "${i%.*}.org"; done'
 alias tuir='tuir -s livestreamfail'
