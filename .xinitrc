@@ -9,7 +9,6 @@ sxhkd &
 dunst &
 mpd &
 start-pulseaudio-x11 &
-# python /home/nick/.otherPrograms/searx/searx/webapp.py &
 light -S 10 &
 
 # Graphical programs
