@@ -130,6 +130,7 @@ export NNN_BMS='G:~/Documents/GU/;m:~/Games/Mods/MHWorld/;w:~/.local/share/Steam
 export NNN_PLUG='c:fzcd;i:imgview;e:gpge;d:gpgd;p:preview-tui;f:finder'
 export NNN_FIFO='/tmp/nnn.fifo'
 export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
+export NNN_OPTS='D'
 
 # Shell depth indicator for nnn
 [ -n "$NNNLVL" ] && PS1="N$NNNLVL $PS1"
