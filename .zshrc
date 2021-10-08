@@ -115,6 +115,7 @@ alias nb='newsboat'
 alias pacman-remove-dependencies='sudo pacman -Rs $(pacman -Qqtd)'
 alias convert-md-to-org='find . -name "*.md" | while read i; do pandoc -f markdown -t org "$i" -o "${i%.*}.org"; done'
 alias tuir='tuir -s livestreamfail'
+alias n3='nnn'
 
 # Use for dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
