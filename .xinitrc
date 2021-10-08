@@ -10,6 +10,7 @@ dunst &
 mpd &
 start-pulseaudio-x11 &
 light -S 10 &
+clipnotify.sh &
 
 # Graphical programs
 st -e 'xinit-tmux.sh'&
