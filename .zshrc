@@ -118,7 +118,7 @@ alias tuir='tuir -s livestreamfail'
 alias n3='nnn'
 
 # Use for dotfiles
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir="$HOME"/.dotfiles/ --work-tree="$HOME"'
 
 # Aliases to change where config files should be,
 # which should be in the .config directory
