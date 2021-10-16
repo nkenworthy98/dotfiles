@@ -195,10 +195,10 @@ visualizer_color = 25,26,27,28,29,30,31,32,33,34
 #alternative_header_first_line_format = $b$1$aqqu$/a$9 {%t}|{%f} $1$atqq$/a$9$/b
 #
 #alternative_header_second_line_format = {{$4$b%a$/b$9}{ - $7%b$9}{ ($4%y$9)}}|{%D}
-alternative_header_second_line_format = {{$5$b%a$/b$9}{ - $7%b$9}{ ($5%y$9)}}|{%D}
+alternative_header_second_line_format = {{$(25)$b%a$/b$9}{ - $7%b$9}{ ($5%y$9)}}|{%D}
 #
 #current_item_prefix = $(yellow)$r
-current_item_prefix = $(39)$r
+current_item_prefix = $(25)$r
 #
 #current_item_suffix = $/r$(end)
 #
@@ -269,7 +269,7 @@ current_item_prefix = $(39)$r
 ##
 #
 #song_columns_list_format = (20)[]{a} (6f)[green]{NE} (50)[white]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{l}
-song_columns_list_format = (20)[39]{a} (6f)[green]{NE} (50)[white]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{l}
+song_columns_list_format = (20)[25]{a} (6f)[green]{NE} (50)[white]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{l}
 #
 ##### various settings #####
 #
@@ -528,7 +528,7 @@ user_interface = alternative
 #
 #state_flags_color = default:b
 #
-main_window_color = 39
+main_window_color = 25
 #
 #color1 = white
 #
