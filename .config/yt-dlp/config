@@ -1,0 +1,3 @@
+--downloader aria2c
+--embed-metadata
+-o '~/videos/ytdl-archive/%(extractor)s/%(channel)s/%(title)s [%(id)s].%(ext)s'
