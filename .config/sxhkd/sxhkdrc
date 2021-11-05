@@ -1,0 +1,78 @@
+# Opens various programs. Press alt + o, then press the corresponding key to open the program
+alt + o; {i,c,r,s,k,l,p,e,t,f,u}
+	{icecat,chatterino,runescape-launcher,steam,keepassxc,lutris,passmenu --type, emacsclient -c -a emacs, tor-browser, firefox, passmenu-user.sh --type}
+
+# MPC keyboard commands
+alt + u; {p,less,greater,l,r}
+	mpc {toggle,prev,next,repeat,random}
+
+# MPC setting volume
+alt + u; v; {0-9}
+	mpc volume {0-9}0
+
+# MPC setting volume
+alt + u; v; f
+	mpc volume 100
+
+# Twitch through mpv
+alt + u; t;
+	twitch.sh
+
+# ytfzf
+alt + u; y;
+	link-handler.pl $(ytfzf -DL)
+
+# Setting brightness
+alt + u; b; {1, 2, 3, 4, b};
+	{light -S 5, light -S 10, light -S 35, light -S 100, light -S $(printf "" | dmenu -p "Brightness?")}
+
+# See current status of mpc through dmenu
+alt + u; s;
+	mpcStatus.sh
+
+# Search for song and play it.
+alt + u; v; s;
+	mpcSearchPlay.sh
+
+# Toggle bluetooth connection
+alt + u; b; c;
+	btcon.sh
+
+# toggle clipnotify.sh
+alt + u; c;
+	clipnotify.sh
+
+# Screenshot script
+alt + u; 1; s;
+	screenshot.sh
+
+## Media Keys
+XF86AudioRaiseVolume
+	pulsemixer --change-volume +2
+
+XF86AudioLowerVolume
+	pulsemixer --change-volume -2
+
+XF86AudioPlay
+	mpc toggle
+
+XF86AudioNext
+	mpc next
+
+XF86AudioPrev
+	mpc prev
+
+# Run goto-site.sh
+alt + u; g;
+	goto-site.sh
+
+# Dunst functions
+# These keybindings were removed from dunst in version 1.7
+ctrl + space
+	 dunstctl close
+
+ctrl + shift + space
+	 dunstctl close-all
+
+ctrl + grave
+	 dunstctl history-pop
