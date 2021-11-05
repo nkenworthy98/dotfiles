@@ -13,7 +13,7 @@ light -S 10 &
 clipnotify.sh &
 
 # Graphical programs
-st -e 'xinit-tmux.sh'&
+st -e 'xinit-tmux.sh' &
 # emacsclient -c &
 # tor-browser &
 
