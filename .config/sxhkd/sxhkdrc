@@ -62,9 +62,9 @@ XF86AudioNext
 XF86AudioPrev
 	mpc prev
 
-# Run goto-site.sh
+# Run goto-site.pl
 alt + u; g;
-	goto-site.sh
+	goto-site.pl
 
 # Dunst functions
 # These keybindings were removed from dunst in version 1.7
