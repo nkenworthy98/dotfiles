@@ -23,8 +23,11 @@ alt + u; y;
 	link-handler.pl $(ytfzf -DL)
 
 # Setting brightness
+# alt + u; b; {1, 2, 3, 4, b};
+# 	{light -S 5, light -S 10, light -S 35, light -S 100, light -S $(printf "" | dmenu -p "Brightness?")}
+
 alt + u; b; {1, 2, 3, 4, b};
-	{light -S 5, light -S 10, light -S 35, light -S 100, light -S $(printf "" | dmenu -p "Brightness?")}
+	{setb.pl 5, setb.pl 10, setb.pl 35, setb.pl 100, setb.pl}
 
 # See current status of mpc through dmenu
 alt + u; s;
@@ -32,11 +35,16 @@ alt + u; s;
 
 # Search for song and play it.
 alt + u; v; s;
-	mpcSearchPlay.sh
+	msp.pl
+	# mpcSearchPlay.sh
 
-# Toggle bluetooth connection
+# Connect to bluetooth device
 alt + u; b; c;
 	btcon.sh
+
+# Disconnect from bluetooth device
+alt + u; b; d;
+	btcon.sh --disconnect
 
 # toggle clipnotify.sh
 alt + u; c;
@@ -53,8 +61,8 @@ XF86AudioRaiseVolume
 XF86AudioLowerVolume
 	pulsemixer --change-volume -2
 
-XF86AudioPlay
-	mpc toggle
+# XF86AudioPlay
+# 	mpc toggle
 
 XF86AudioNext
 	mpc next
@@ -76,3 +84,137 @@ ctrl + shift + space
 
 ctrl + grave
 	 dunstctl history-pop
+
+alt + semicolon; {p}
+	toggle.pl {picom}
+
+alt + semicolon; {a, m}
+	killprog.pl {ashuffle, mpv}
+
+
+
+
+
+########## BSPWM Keys
+##########
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+alt + shift + Return
+	st
+
+# program launcher
+alt + p
+	dmenu_run
+
+# make sxhkd reload its configuration files:
+alt + Escape
+	pkill -USR1 -x sxhkd
+
+#
+# bspwm hotkeys
+#
+
+# quit/restart bspwm
+alt + shift + {q,r}
+	bspc {quit,wm -r}
+
+# close and kill
+alt + shift + c
+	bspc node -{c}
+
+# alternate between the tiled and monocle layout
+alt + m
+	bspc desktop -l next
+
+# send the newest marked node to the newest preselected node
+alt + y
+	bspc node newest.marked.local -n newest.!automatic.local
+
+# Swap The Current Node And The Biggest WindoW
+alt + g
+	bspc node -s biggest.window
+
+#
+# state/flags
+#
+
+# set the window state
+alt + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# set the node flags
+alt + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+#
+# focus/swap
+#
+
+# focus the node in the given direction
+alt + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus the node for the given path jump
+super + {p,b,comma,period}
+	bspc node -f @{parent,brother,first,second}
+
+# focus the next/previous window in the current desktop
+alt + {_,shift + }n
+	bspc node -f {next,prev}.local.!hidden.window
+
+# focus the next/previous desktop in the current monitor
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
+
+# focus the last node/desktop
+alt + {grave,Tab}
+	bspc {node,desktop} -f last
+
+# focus the older or newer node in the focus history
+super + {o,i}
+	bspc wm -h off; \
+	bspc node {older,newer} -f; \
+	bspc wm -h on
+
+# focus or send to the given desktop
+alt + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+#
+# preselect
+#
+
+# preselect the direction
+alt + d; {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+# preselect the ratio
+alt + r; {1-9}
+	bspc node -o 0.{1-9}
+
+# cancel the preselection for the focused node
+super + ctrl + space
+	bspc node -p cancel
+
+# cancel the preselection for the focused desktop
+super + ctrl + shift + space
+	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+#
+# move/resize
+#
+
+# expand a window by moving one of its side outward
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# contract a window by moving one of its side inward
+super + alt + shift + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# move a floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
