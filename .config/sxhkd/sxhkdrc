@@ -91,8 +91,14 @@ alt + semicolon; {p}
 alt + semicolon; {a, m}
 	killprog.pl {ashuffle, mpv}
 
+alt + semicolon; {c}
+	hccs.pl
 
+alt + r
+	bspc query -N -d | xargs -I 'nodes' bspc node 'nodes' -B
 
+alt + semicolon; {t}
+	resize-and-move.sh
 
 
 ########## BSPWM Keys
