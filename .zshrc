@@ -31,8 +31,8 @@ export PATH="$PATH:$HOME/bin:$HOME/bin/perl_scripts:$HOME/bin/ocr-scripts:$HOME/
 
 # export MAIN_CUSTOM_COLOR='#2d6580'
 # export MAIN_CUSTOM_COLOR='#3c64a9'
-# export MAIN_CUSTOM_COLOR='#154889'
-export MAIN_CUSTOM_COLOR='#E43348'
+export MAIN_CUSTOM_COLOR='#154889'
+# export MAIN_CUSTOM_COLOR='#E43348'
 PROMPT="%B%F{magenta}[%F{$MAIN_CUSTOM_COLOR}%n%f%F{$MAIN_CUSTOM_COLOR}@%F{$MAIN_CUSTOM_COLOR}%m%f %F{cyan}%B%c%F{magenta}]%b%f%# "
 # PROMPT="%F{$MAIN_CUSTOM_COLOR}%1~%f# "
 
@@ -60,7 +60,7 @@ alias config='/usr/bin/git --git-dir="$HOME"/.dotfiles/ --work-tree="$HOME"'
 alias irssi='irssi --home=~/.config/irssi/'
 
 # Stuff for nnn
-export NNN_COLORS='#a7a8a9aa;4531'
+export NNN_COLORS='#18191a1b;4531'
 export NNN_BMS='G:~/Documents/GU/;m:~/Games/Mods/MHWorld/;w:~/.local/share/Steam/steamapps/common/Monster Hunter World/'
 export NNN_PLUG='c:fzcd;i:imgview;e:gpge;d:gpgd;p:preview-tui;f:finder'
 export NNN_FIFO='/tmp/nnn.fifo'
