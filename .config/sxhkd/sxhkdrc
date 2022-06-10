@@ -18,6 +18,9 @@ alt + u; v; f
 alt + u; t;
 	twitch.sh
 
+alt + u; T;
+	tfstat; twitch.sh
+
 # ytfzf
 alt + u; y;
 	link-handler.pl $(ytfzf -DL)
