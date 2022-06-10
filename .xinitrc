@@ -6,8 +6,7 @@ picom &
 emacs --daemon &
 sxhkd &
 dunst &
-mpd &
-start-pulseaudio-x11 &
+[ ! -s ~/.config/mpd/pid ] && mpd &
 setb.pl 10 &
 clipnotify.sh &
 
