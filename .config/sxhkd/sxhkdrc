@@ -37,9 +37,8 @@ alt + u; s;
 	mpcStatus.sh
 
 # Search for song and play it.
-alt + u; v; s;
-	msp.pl
-	# mpcSearchPlay.sh
+alt + u; v; {s, S};
+	{msp.pl, msp.pl --append}
 
 # Connect to bluetooth device
 alt + u; b; c;
