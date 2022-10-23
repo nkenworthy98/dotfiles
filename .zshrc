@@ -41,7 +41,7 @@ PROMPT="%B%F{magenta}[%F{$MAIN_CUSTOM_COLOR}%n%f%F{$MAIN_CUSTOM_COLOR}@%F{$MAIN_
 [[ $TERM == "dumb" ]] && unsetopt zle && PS1='$ '
 
 alias em='emacs -nw'
-alias yv='pipe-viewer -360'
+alias yv='pipe-viewer -3'
 alias pm='pulsemixer'
 alias nb='newsboat'
 alias pacman-remove-dependencies='sudo pacman -Rs $(pacman -Qqtd)'
