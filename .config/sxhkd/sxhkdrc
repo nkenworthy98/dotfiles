@@ -1,6 +1,9 @@
 # Opens various programs. Press alt + o, then press the corresponding key to open the program
-alt + o; {i,c,r,s,k,l,p,e,t,f,u}
-	{icecat,chatterino,runescape-launcher,steam,keepassxc,lutris,passmenu --type, emacsclient -c -a emacs, tor-browser, firefox, passmenu-user.sh --type}
+alt + o; {i,c,r,s,k,l,e,t,f}
+	{icecat,chatterino,runescape-launcher,steam,keepassxc,lutris, emacsclient -c -a emacs, tor-browser, firefox}
+
+alt + o; {o,p,u,a}
+	passmenu.pl {--type-otp, --type-password, --type-username, --type-username-and-password}
 
 # MPC keyboard commands
 alt + u; {p,less,greater,l,r}
