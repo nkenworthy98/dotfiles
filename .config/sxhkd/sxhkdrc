@@ -1,9 +1,9 @@
 # Opens various programs. Press alt + o, then press the corresponding key to open the program
-alt + o; {i,c,r,s,k,l,e,t,f}
+alt + o; {i,c,r,s,k,L,e,t,f}
 	{icecat,chatterino,runescape-launcher,steam,keepassxc,lutris, emacsclient -c -a emacs, tor-browser, firefox}
 
-alt + o; {o,p,u,a}
-	passmenu.pl {--type-otp, --type-password, --type-username, --type-username-and-password}
+alt + o; {o,p,u,a,l}
+	passmenu.pl {--type-otp, --type-password, --type-username, --type-username-and-password, --type-url}
 
 # MPC keyboard commands
 alt + u; {p,less,greater,l,r}
@@ -22,7 +22,7 @@ alt + u; t;
 	twitch.sh
 
 alt + u; T;
-	tfstat; twitch.sh
+	tfstat channels -w; twitch.sh
 
 # ytfzf
 alt + u; y;
@@ -42,6 +42,9 @@ alt + u; s;
 # Search for song and play it.
 alt + u; v; {s, a, i};
 	{msp.pl, msp.pl --append, msp.pl --insert}
+
+alt + u; v; {S, A, I};
+	{msp.pl -r -b, msp.pl -r -a -b, msp.pl -r -i -b}
 
 # Connect to bluetooth device
 alt + u; b; c;
