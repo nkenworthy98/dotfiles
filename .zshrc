@@ -64,7 +64,7 @@ alias irssi='irssi --home=~/.config/irssi/'
 # Stuff for nnn
 export NNN_COLORS='#a7a8a9aa;4531'
 export NNN_BMS='G:~/Documents/GU/;m:~/Games/Mods/MHWorld/;w:~/.local/share/Steam/steamapps/common/Monster Hunter World/'
-export NNN_PLUG='c:fzcd;i:imgview;e:gpge;d:gpgd;p:preview-tui;f:finder'
+export NNN_PLUG='c:fzcd;i:imgview;e:gpge;d:gpgd;p:preview-tui-ext;f:finder;P:preview-tabbed'
 export NNN_FIFO='/tmp/nnn.fifo'
 export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
 export NNN_OPTS='D'
