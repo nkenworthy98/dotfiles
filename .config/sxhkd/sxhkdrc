@@ -108,6 +108,12 @@ alt + r
 alt + semicolon; {t}
 	resize-and-move.sh
 
+alt + semicolon; {s}
+	notify-send "Running sup..." "No docker pull" && sup -Pn
+
+alt + semicolon; {S}
+	notify-send "Running sup..." "With docker pull" && sup -n
+
 
 ########## BSPWM Keys
 ##########
